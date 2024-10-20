@@ -1,0 +1,87 @@
+.modalBackground {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal {
+  /* background-color: yellowgreen; */
+  background-color: rgb(var(--background-end-rgb));
+  position: relative;
+  max-width: 80vw;
+  min-width: 600px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+}
+/* Header */
+.modalHeader {
+  padding: 36px 80px 20px;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+/* Body */
+.modal form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.modalBody {
+  flex: 1;
+  padding: 0 80px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  position: relative;
+  margin: 12px 0;
+}
+.inputLabel {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  display: inline-block;
+  top: 0;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 8px 8px 0;
+  color: rgb(83, 100, 113);
+}
+.inputLabel:focus-within {
+  color: red;
+}
+
+.input {
+  width: 100%;
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 16px 8px 8px;
+  border: none;
+  outline: none;
+}
+/* Footer */
+.modalFooter {
+  padding: 24px 80px;
+}
+
+.actionButton {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgb(15, 20, 25);
+  color: white;
+  font-size: 17px;
+}

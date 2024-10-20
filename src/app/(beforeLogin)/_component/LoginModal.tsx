@@ -2,13 +2,18 @@
 
 import { useState } from "react";
 import style from "./login.module.css";
+import { useRouter } from "next/navigation";
+
 export default function Page() {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const router = useRouter();
 
   const onSubmit = () => {};
-  const onClickClose = () => {};
+  const onClickClose = () => {
+    router.back();
+  };
   const onChangeId = () => {};
   const onChangePassword = () => {};
   return (
@@ -57,6 +62,12 @@ export default function Page() {
                 placeholder=""
               />
             </div>
+          </div>
+          <div className={style.message}>{message}</div>
+          <div className={style.modalFooter}>
+            <button className={style.actionButton} disabled={!id && !password}>
+              로그인하기
+            </button>
           </div>
         </form>
       </div>
