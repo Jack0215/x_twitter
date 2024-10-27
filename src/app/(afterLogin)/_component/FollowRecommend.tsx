@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import style from "./followRecommend.module.css";
-import Logo from "@/app/public/zlogo.png";
+import Logo from "/public/zlogo.png";
 export default function FollowRecommend() {
   const onFollow = () => {};
 

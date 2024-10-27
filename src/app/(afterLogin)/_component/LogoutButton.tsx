@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import style from "./logoutButton.module.css";
-import Logo from "@/app/public/zlogo.png";
+import Logo from "/public/zlogo.png";
 export default function LogoutButton() {
   const me = {
     // 임시로 내 정보 있는것처럼
