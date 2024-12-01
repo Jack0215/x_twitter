@@ -5,14 +5,14 @@ type Props = {
   children: React.ReactNode;
   post: {
     postId: number;
-    content: string;
     User: {
       id: string;
       nickName: string;
       image: string;
     };
+    content: string;
     createdAt: Date;
-    Images: string[];
+    Images: unknown[];
   };
 };
 export default function PostArticle({ children, post }: Props) {
